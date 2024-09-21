@@ -5,6 +5,5 @@ d = { 'settings': { 'branch': 'master',
                 'doc_host': 'https://fligt.github.io',
                 'git_url': 'https://github.com/fligt/imageregistrationhelper',
                 'lib_path': 'imageregistrationhelper'},
-  'syms': { 'imageregistrationhelper.core': {'imageregistrationhelper.core.foo': ('core.html#foo', 'imageregistrationhelper/core.py')},
-            'imageregistrationhelper.imreg': { 'imageregistrationhelper.imreg.hello': ( 'image-registration.html#hello',
+  'syms': { 'imageregistrationhelper.imreg': { 'imageregistrationhelper.imreg.hello': ( 'image-registration.html#hello',
                                                                                         'imageregistrationhelper/imreg.py')}}}
