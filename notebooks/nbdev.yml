@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "imageregistrationhelper"
+  site-url: "https://fligt.github.io/imageregistrationhelper"
+  description: "Register your images with interactive widgets in Jupyter notebooks"
+  repo-branch: master
+  repo-url: "https://github.com/fligt/imageregistrationhelper"
