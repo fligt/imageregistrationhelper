@@ -10,4 +10,4 @@ corresponding landmarks and transformation matrices is typically lost.
 
 This python package is developed to perform interactive four point image
 registration (a.k.a. homography) within Jupyter notebooks. In this way
-registration can be made part of a larger computational workflow.
+image registration can be made part of a larger computational workflow.
