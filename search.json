@@ -1,0 +1,22 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to imageregistrationhelper",
+    "section": "",
+    "text": "The capability to register or overlay of different technical images is important in cultural heritage science. Although such overlays can be created with various programs such as photo editors, the coordinates of corresponding landmarks and transformation matrices is typically lost.\nThis python package is developed to perform interactive four point image registration (a.k.a. homography) within Jupyter notebooks. In this way image registration can be made part of a larger computational workflow.",
+    "crumbs": [
+      "Welcome to imageregistrationhelper"
+    ]
+  },
+  {
+    "objectID": "image-registration.html",
+    "href": "image-registration.html",
+    "title": "Image registration with Jupyter",
+    "section": "",
+    "text": "More explanation soon…\n\nsource\n\nhello\n\n hello ()\n\n\nimport imageregistrationhelper as irh\n\n\nirh.hello()\n\nhi!",
+    "crumbs": [
+      "Image registration with Jupyter"
+    ]
+  }
+]
