@@ -5,4 +5,4 @@ __all__ = ['hello']
 
 # %% ../notebooks/10_image-registration.ipynb 3
 def hello(): 
-    print('hi')
+    print('hi!')
