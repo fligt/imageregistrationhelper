@@ -5,7 +5,7 @@
 # %% auto 0
 __all__ = ['ImageRegistrationHelper', 'warp', 'xy_to_latlon', 'latlon_to_xy']
 
-# %% ../notebooks/10_image-registration.ipynb 13
+# %% ../notebooks/10_image-registration.ipynb 14
 from ipywidgets import Layout, HBox, VBox 
 
 from ipyleaflet import Map, ImageOverlay, Marker, DivIcon, FullScreenControl, projections
@@ -25,7 +25,7 @@ import skimage.transform as skt
 import numpy as np
 import cv2 
 
-# %% ../notebooks/10_image-registration.ipynb 14
+# %% ../notebooks/10_image-registration.ipynb 15
 class ImageRegistrationHelper(object): 
     '''Create interactive image registration. '''
     
