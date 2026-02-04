@@ -9,5 +9,6 @@ created with various programs such as photo editors, the coordinates of
 corresponding landmarks and transformation matrices is typically lost.
 
 This python package is developed to perform interactive four point image
-registration (a.k.a. homography) within Jupyter notebooks. In this way
+registration (a.k.a. homeography) within Jupyter notebooks. In this way
 image registration can be made part of a larger computational workflow.
+This is made possible with holoviews.
