@@ -1,0 +1,32 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to imageregistrationhelper",
+    "section": "",
+    "text": "The capability to register or overlay of different technical images is important in cultural heritage science. Although such overlays can be created with various programs such as photo editors, the coordinates of corresponding landmarks and transformation matrices is typically lost.\nThis python package is developed to perform interactive four point image registration (a.k.a. homeography) within Jupyter notebooks. In this way image registration can be made part of a larger computational workflow. This is made possible with holoviews.",
+    "crumbs": [
+      "Welcome to imageregistrationhelper"
+    ]
+  },
+  {
+    "objectID": "image-registration.html",
+    "href": "image-registration.html",
+    "title": "Image registration with Jupyter",
+    "section": "",
+    "text": "In this example we will register a high resolution RGB image of a Rembrandt drawing (the source image) onto a lower resolution elemental map for iron (the destination image). This is done by drawing four corresponding landmark point pairs in an interactive holoviews widget in this Jupyter notebook. To get started we first need to import matplotlib, holoviews and the ImageRegistratorHelper class and activate the holoviews bokeh extension.\nimport matplotlib.pyplot as plt \nimport holoviews as hv \nfrom imageregistrationhelper import ImageRegistrationHelper\nhv.extension('bokeh')\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n  \n  \n\n\n\n\n\n\n\n\nⓘ\nThen we need to load the two images as arrays into memory using the matplotlib imread() function as follows.\nim_src = plt.imread('../demo_data/RP-T-1898-A-3689_highres.png') # source image\nim_dst = plt.imread('../demo_data/RP-T-1898-A-3689_FeKa-map-clipped.png') # destination image\nfig, [ax0, ax1] = plt.subplots(ncols=2)\n\nax0.imshow(im_src)\nax0.set_title('Source image')\nax1.imshow(im_dst)\nax1.set_title('Destination image');\nNow instantiate ImageRegistratorHelper class and display the interactive canvas. Activate the Point Draw Tool in the menu and in the four corner regions the top and bottom image viewers draw landmark point pairs on corresponding positions.\nimreg = ImageRegistrationHelper(im_src, im_dst)\nimreg.canvas\nIf you feel that all points pairs are positioned correctly you can inspect the result by executing the .warp() method.\nimreg.warp()\nIf the result is good you can save the resulting image with the .save() method. The this function returns the image array and corresponding extent for further processing. If you provide an image filename the registered image will be also be saved in your working directory.\nimvis_reg_highres, extent = imreg.save('my_registered_image.png')",
+    "crumbs": [
+      "Image registration with Jupyter"
+    ]
+  },
+  {
+    "objectID": "image-registration.html#functions",
+    "href": "image-registration.html#functions",
+    "title": "Image registration with Jupyter",
+    "section": "FUNCTIONS",
+    "text": "FUNCTIONS\n\nsource\n\nwarp\n\ndef warp(\n    im_src, im_dst, pts_src, pts_dst, keep_scale:bool=True, rgba:bool=True, alpha_color:list=[1, 0, 0]\n):\n\nOpencv based homographic registration. Can return transparent overlay (rgba). \nReturns: im_warped, extent\n\nsource\n\n\nImageRegistrationHelper\n\ndef ImageRegistrationHelper(\n    im_src, im_dst, frame_width:int=400\n):\n\nCreate interactive holoviews canvas to draw 4 point pairs.",
+    "crumbs": [
+      "Image registration with Jupyter"
+    ]
+  }
+]
